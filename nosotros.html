@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nosotros - AGENCIA DE TURISMO</title>
+    <link rel="shortcut icon" href="./imagenes/icons8-travel-64.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/estilos.css"> <!-- Cambiado el nombre del archivo CSS -->
+    <style>
+        /* Estilos adicionales */
+        .encuesta {
+            margin-top: 20px; /* Espacio entre el mapa y la encuesta */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .encuesta input[type="text"],
+        .encuesta textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        .encuesta input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .encuesta input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <div class="logo">
+                <img src="imagenes/logo.jpg" alt="Logo de la empresa">         
+            </div>               
+            <div class="menu">
+                <a href="index.html">Inicio</a>                                                    
+                <a href="promociones.html">Promociones</a>                   
+                <a href="nosotros.html">Nosotros</a>                     
+                <a href="formularios.html">Registrate</a>                                             
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="nosotros">
+            <h1>Sobre Nosotros</h1>
+            <p>Somos una agencia de turismo dedicada a brindar experiencias inolvidables a nuestros clientes. 
+               Con más de 10 años en el mercado, hemos recorrido el mundo entero para ofrecerte los mejores 
+               destinos, los más emocionantes tours y las opciones de alojamiento más confortables.</p>
+            <div class="imagen-container"> <!-- Nuevo contenedor para la primera imagen -->
+                <img src="./imagenes/imagen1.jpg" alt="Destinosturísticos">
+            </div>
+            <h2>Qué ofrecemos</h2>
+            <ul>
+                <li><strong>Paquetes turísticos personalizados:</strong> Diseñamos viajes adaptados a tus necesidades y gustos.</li>
+                <li><strong>Reservas de vuelos, hoteles y actividades:</strong> Te gestionamos todo para que solo te preocupes por disfrutar.</li>
+                <li><strong>Asesoramiento y atención personalizada:</strong> Nuestros expertos están siempre disponibles para ayudarte.</li>
+                <li><strong>Seguro de viaje:</strong> Te ofrecemos la tranquilidad que necesitas durante tu aventura.</li>
+            </ul>
+            <div class="imagen-container"> <!-- Nuevo contenedor para la segunda imagen -->
+                <img src="./imagenes/nosotros1.avif" alt="nosotros trabajando">
+            </div>
+            <h2>Nuestra visión</h2>
+            <p>Buscamos ser la agencia de turismo líder en el mercado, reconocida por nuestra calidad de servicio, 
+               innovación y compromiso con el cliente.</p>
+        </section>
+        
+        <div class="mapa-container">
+            <div class="encuesta">
+                <h2>Encuesta de Satisfacción</h2>
+                <form id="encuestaForm" onsubmit="enviarEncuesta(); return false;">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="comentarios">Comentarios:</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" required></textarea>
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.5523356331114!2d-65.20615042604436!3d-26.8223792767011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c17ec2d7991%3A0x376a924ecbd1b76a!2sPcia%20de%20Corrientes%20579%2C%20T4000EBK%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1711043108290!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+    <footer>
+        <div id="contact">
+            <h2>Contacto - Reservas</h2>
+            <p>Email: <a href="mailto:Caffier@crack.com">TurismoMVH@crack.com</a></p>
+            <p>Teléfono: <a href="tel:(123)456-7890">(123) 456-7890</a></p>
+            <p>WhatsApp: <a href="https://wa.me/1234567890">123-456-7890</a></p>
+        </div>
+        <div>
+            <a href="https://facebook.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdmGQOjC_u_kSiGhNCA9Uv2aKPRjX-VKd4-xUmvEuUPA&s" alt="Facebook" /></a>
+            <a href="https://twitter.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReaNRdsTQRPuCrYX7evdU2YufJdkOx01ivHiVgwlaosA&s" alt="Twitter" /></a>
+            <a href="https://instagram.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJY43zkIuDmzCUnQysyc5t_emyUmDgowX51cqrlNFTdw&s" alt="Instagram" /></a>
+        </div>
+        <div>
+            <p>Todos los derechos reservados © 2023 - MVH</p>
+        </div>
+        <a id="top" href="#top">Volver arriba</a>
+    </footer>
+
+    <script>
+        // Función para desplazarse suavemente hacia arriba cuando se hace clic en el botón "Volver arriba"
+        document.getElementById("top").addEventListener("click", function(event) {
+            event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+            const scrollTop = window.scrollY || document.documentElement.scrollTop; // Posición actual de desplazamiento
+            if (scrollTop > 0) {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth" // Desplazamiento suave
+                });
+            }
+        });
+
+        // Función para enviar la encuesta
+        function enviarEncuesta() {
+            // Aquí puedes agregar el código para enviar los datos de la encuesta a algún lugar, como una base de datos o un servicio en línea
+            alert("¡Gracias por completar la encuesta!");
+            document.getElementById("encuestaForm").reset(); // Reinicia el formulario después de enviar
+        }
+    </script>
+</body>
+</html>

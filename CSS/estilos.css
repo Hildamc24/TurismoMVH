@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Estilo de la cabecera */
+.cabecera {
+    background: linear-gradient(to bottom, #333333, #666666);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Añadido un padding */
+}
+
+.logo img {
+    max-width: 100%; /* Para que la imagen del logo se ajuste correctamente */
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px; /* Añadido un margen a los enlaces del menú */
+}
+
+/* Estilo de la sección */
+section {
+    background: linear-gradient(to bottom, #333333, #666666);
+    color: white;
+    padding: 20px; /* Añadido un padding */
+}
+
+/* Estilo del carrusel */
+.carrusel {
+    position: relative;
+    height: 300px; /* Ajusta la altura del carrusel */
+}
+
+.carrusel .frase {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+    color: white; /* Ajustado el color del texto */
+}
+
+.carrusel .frase p {
+    font-size: 18px; /* Ajustado el tamaño del texto */
+}
+
+.carrusel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para que las imágenes se ajusten correctamente */
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+/* Animación del carrusel */
+@keyframes carruselAnimation {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    75% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.carrusel img:nth-child(1) {
+    animation: carruselAnimation 9s infinite;
+}
+
+.carrusel img:nth-child(2) {
+    animation: carruselAnimation 9s infinite 3s;
+}
+
+.carrusel img:nth-child(3) {
+    animation: carruselAnimation 9s infinite 6s;
+}
+
+/* Estilo de las promociones */
+.promos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0; /* Añadido un padding */
+}
+
+.promos article {
+    flex-basis: calc(30% - 20px);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.promos img {
+    width: 100%;
+}
+
+.promos a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajustado el color de fondo */
+    color: white;
+    text-align: center; /* Centra el texto */
+    padding: 5px;
+}
+
+/* Estilo del título */
+.titulo h2 {
+    text-align: center;
+    padding: 20px 0; /* Añadido un padding */
+}
+
+/* Estilo del footer */
+footer {
+    background: linear-gradient(to bottom, #333333, #666666);
+    color: white;
+    padding: 20px 0; /* Añadido un padding */
+    text-align: center; /* Centra el contenido del footer */
+}
+
+/* Estilo para el botón de volver arriba */
+footer a[href="#top"] {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px; /* Añadido un margen superior */
+}
+
+
+
+/* Estilo del contenedor de la imagen */
+.imagen-container {
+    margin-bottom: 20px; /* Agregamos un margen inferior para separar las imágenes */
+}
+
+/* Estilo del contenedor del mapa */
+.mapa-container {
+    margin-bottom: 20px; /* Agregamos un margen inferior para separar el mapa */
+}
+
+/* Estilo de las imágenes dentro de los contenedores */
+.imagen-container img {
+    max-width: 100%; /* Ajusta el ancho máximo de las imágenes al 100% del contenedor */
+    height: auto; /* Permite que la altura de las imágenes se ajuste proporcionalmente al ancho */
+}
+
+/* Estilo del iframe dentro del contenedor del mapa */
+.mapa-container iframe {
+    max-width: 100%; /* Ajusta el ancho máximo del iframe al 100% del contenedor */
+    height: auto; /* Permite que la altura del iframe se ajuste proporcionalmente al ancho */
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/*ACA ARRANCA CSS PARA NOSOTROS.html*/
+
+/* Estilo del contenedor de la imagen */
+.imagen-container {
+    margin-bottom: 20px; /* Agregamos un margen inferior para separar las imágenes */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Estilo del contenedor del mapa */
+.mapa-container {
+    margin-bottom: 20px; /* Agregamos un margen inferior para separar el mapa */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Estilo de las imágenes dentro de los contenedores */
+.imagen-container img {
+    max-width: 100%; /* Ajusta el ancho máximo de las imágenes al 100% del contenedor */
+    height: auto; /* Permite que la altura de las imágenes se ajuste proporcionalmente al ancho */
+}
+
+/* Estilo del iframe dentro del contenedor del mapa */
+.mapa-container iframe {
+    max-width: 100%; /* Ajusta el ancho máximo del iframe al 100% del contenedor */
+    height: auto; /* Permite que la altura del iframe se ajuste proporcionalmente al ancho */
+}
+
+@media screen and (max-width: 1024px) {
+    .mapa-container {
+        flex-direction: column;
+    }
+
+    .encuesta {
+        margin-top: 20px; /* Espacio entre el mapa y la encuesta */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*ACA TERMINA EL CSS PARA NOSOTROS.html*/
+/*-------------------------------------------------------------------------------------------------*/
