@@ -201,3 +201,61 @@ footer a[href="#top"] {
 
 /*ACA TERMINA EL CSS PARA NOSOTROS.html*/
 /*-------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------------*/
+/*ACA ARRANCA Formularios.html AGREGADO*/
+
+/* Estilo del formulario */
+.form-control {
+    margin-bottom: 15px;
+}
+
+/* Estilo de los mensajes de error */
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+
+/* Estilo de los términos y condiciones */
+.form-terminos {
+    margin-top: 20px;
+}
+
+/*ACA TERMINA Formularios.html AGREGADO*/
+/*-------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------------*/
+/*ACA ARRANCA Promociones.html AGREGADO*/
+
+/* Estilo para contenedores horizontales de promociones y más vendidas */
+.lista-horizontal {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si la pantalla es demasiado pequeña */
+}
+.lista-horizontal .item {
+    flex-basis: calc(33.333% - 20px); /* Cada item ocupa un tercio del contenedor menos un margen */
+    margin-bottom: 20px;
+    background-color: #fff; /* Fondo blanco para los items */
+    color: #000; /* Texto negro para los items */
+    padding: 10px;
+    text-align: center;
+}
+
+.lista-horizontal .detalle-img {
+    width: 100%;
+    height: 200px; /* Fija la altura deseada */
+    object-fit: cover; /* Mantiene la proporción de la imagen y la recorta si es necesario */
+}
+
+.lista-horizontal .detalle, .lista-horizontal .detalle_2 {
+    margin-top: 10px;
+}
+
+.lista-horizontal .detalle p, .lista-horizontal .detalle_2 p {
+    margin: 5px 0;
+}
+
+
+/*ACA TERMINA promociones.html AGREGADO*/
+/*-------------------------------------------------------------------------------------------------*/
