@@ -85,7 +85,9 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px 0; /* Añadido un padding */
+    padding: 20px 0; /* Añadido un padding */  
+    position: relative;
+    overflow: hidden; /* Asegura que los elementos no se salgan del contenedor */
 }
 
 .promos article {
@@ -94,8 +96,13 @@ section {
     position: relative;
 }
 
+
 .promos img {
     width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px; /* Ajusta este valor para obtener el radio deseado */
+    transition: transform 0.3s ease; /* Agregar transición para el efecto */
 }
 
 .promos a {
@@ -103,13 +110,37 @@ section {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Ajustado el color de fondo */
+    background-color: rgba(0, 0, 0, 0.5); /* Ajustado el color de fondo */    
+    border-bottom-left-radius: 15px; /* Ajusta este valor para el radio inferior izquierdo */
+    border-bottom-right-radius: 15px; /* Ajusta este valor para el radio inferior derecho */
     color: white;
-    text-align: center; /* Centra el texto */
-    padding: 5px;
+    text-align: center; /* Centra el texto */    
+    text-decoration: none;
+    padding: 5px;      
+    transition: background-color 0.3s ease; /* Añade una transición suave para el fondo */    
 }
 
-/* Estilo del título */
+.promos p {
+    color: white;
+    text-align: center; /* Centra el texto */    
+    text-decoration: none;
+    padding: 20px;      
+    opacity: 0; /* Inicialmente ocultar el texto */    
+    transition: opacity 0.3s ease; /* Añade una transición suave para la opacidad */
+}
+
+.promos a:hover img {
+    transform: scale(1.05); /* Agranda la imagen un poco al hacer hover */
+}
+
+.promos a:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Oscurece el fondo al hacer hover */
+}
+
+.promos a:hover p {
+    opacity: 1; /* Muestra el texto al hacer hover */
+}
+
 .titulo h2 {
     text-align: center;
     padding: 20px 0; /* Añadido un padding */
