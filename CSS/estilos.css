@@ -146,6 +146,141 @@ section {
     padding: 20px 0; /* Añadido un padding */
 }
 
+/* Estilos responsivos para mobile L - 425px */
+@media screen and (max-width: 425px) {
+    .cabecera {
+        flex-direction: column;        
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .menu a {
+        margin: 5px 10px;
+        
+    }
+
+    .carrusel {
+        height: 300px;
+    }
+
+    .carrusel .frase p {
+        font-size: 14px;
+    }
+
+    .promos article {
+        flex-basis: calc(50% - 10px);
+    }
+
+    .promos a {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+}
+
+/* Estilos responsivos para mobile M - 375px */
+@media screen and (max-width: 375px) {
+    .cabecera {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .menu a {
+        margin: 5px 0;
+    }
+
+    .carrusel {
+        height: 250px;
+    }
+
+    .carrusel .frase p {
+        font-size: 12px;
+    }
+
+    .promos article {
+        flex-basis: 100%;
+    }
+
+    .promos a {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+}
+/* Estilo de las promociones agregadas desde el index */
+.paquetes{    
+    flex: auto;
+    display: flex;    
+    flex-flow: column wrap;
+    padding:  5px 5px;    
+    overflow: hidden; /* Asegura que los elementos no se salgan del contenedor */
+}
+
+.elementos{
+    background: #201f20;
+    padding: 10px 10px;
+    font-size: 1.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: right;    
+    overflow: hidden; /* Asegura que los elementos no se salgan del contenedor */
+}
+
+.elementos img{
+    width: 500px;    
+    overflow: hidden; /* Asegura que los elementos no se salgan del contenedor */
+} 
+
+.elementos h2{
+    font-size: 24px; 
+    padding: 10px 0;
+    text-align: center;   
+    background: #201f20;
+}
+
+.excursiones{ 
+    background: #201f20;
+    display: flex;
+    flex-flow: row wrap;    
+    justify-content: space-between; /*distribuye los items agregando espacioes entre los elementos*/
+    align-items: center;
+    padding: 10px 10px;        
+    overflow: hidden; /* Asegura que los elementos no se salgan del contenedor */
+}
+
+.excursiones h3{
+    text-align: center;
+}
+
+.excursiones img{      
+    width: 300px;
+}  
+
+/* Estilos responsivos para mobile L - 425px */
+@media (max-width: 425px) {
+    .paquete .elementos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .paquete .elementos div {
+        width: 100%;
+        text-align: center;
+    }
+    .excursiones {
+        flex-direction: column;
+    }
+    .excursiones img {
+        width: 100%;
+    }
+}
+
 /* Estilo del footer */
 footer {
     background: linear-gradient(to bottom, #333333, #666666);
@@ -286,7 +421,6 @@ footer a[href="#top"] {
 .lista-horizontal .detalle p, .lista-horizontal .detalle_2 p {
     margin: 5px 0;
 }
-
 
 /*ACA TERMINA promociones.html AGREGADO*/
 /*-------------------------------------------------------------------------------------------------*/

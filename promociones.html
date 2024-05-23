@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,13 +13,13 @@
     <header>
         <div class="cabecera">
             <div class="logo">
-                <img src="imagenes/logo.jpg" alt="Logo de la empresa">         
-            </div>               
+                <img src="imagenes/logo.jpg" alt="Logo de la empresa">
+            </div>
             <div class="menu">
-                <a href="index.html">Inicio</a>                                                    
-                <a href="promociones.html">Promociones</a>                   
-                <a href="nosotros.html">Nosotros</a>                     
-                <a href="formularios.html">Registrate</a>                                             
+                <a href="index.html">Inicio</a>
+                <a href="promociones.html">Promociones</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="formularios.html">Registrate</a>
             </div>
         </div>
     </header>
@@ -89,9 +90,31 @@
                 </div>
             </div>
         </section>
+
+        <!-- Las promos promocionadas en la página principal  -->
+        <section class="paquete">
+            <div class="elementos">                  
+                <div><img src="imagenes/imagenesHILDA/misiones.jpg"></div>
+                <div id="misiones">
+                    <div><h2>MISIONES</h2></a></div>
+                    <div>6 días y 4 noches</div>
+                    <div>Hoteles con media pensión</div>
+                    <div>Consultá forma de pago</div>
+                    <div>Importe:  $277.000</div>
+                </div> 
+            </div>
+            <div><h2>Excursiones opcionales</h2></div>   
+            <div class="excursiones">
+                <div><img src="imagenes/imagenesHILDA/misiones/obera.jpg" alt=""><h3>OBERA</h3></div>
+                <div><img src="imagenes/imagenesHILDA/misiones/posada.jpg" alt=""><h3>POSADAS</h3></div>
+                <div><img src="imagenes/imagenesHILDA/misiones/puerto Iguazu.jpg" alt=""><h3>PUERTO IGUAZU</h3></div>
+                <div><img src="imagenes/imagenesHILDA/misiones/san Ignacio.jpg" alt=""><h3>SAN IGNACIO</h3></div>
+            </div>   
+        </section>
+
     </main>
-   
-   <footer>
+
+    <footer>
         <div id="contact">
             <h2>Contacto - Reservas</h2>
             <p>Email: <a href="mailto:Caffier@crack.com">TurismoMVH@crack.com</a></p>
@@ -99,9 +122,15 @@
             <p>WhatsApp: <a href="https://wa.me/1234567890">123-456-7890</a></p>
         </div>
         <div>
-            <a href="https://facebook.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdmGQOjC_u_kSiGhNCA9Uv2aKPRjX-VKd4-xUmvEuUPA&s" alt="Facebook" /></a>
-            <a href="https://twitter.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReaNRdsTQRPuCrYX7evdU2YufJdkOx01ivHiVgwlaosA&s" alt="Twitter" /></a>
-            <a href="https://instagram.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJY43zkIuDmzCUnQysyc5t_emyUmDgowX51cqrlNFTdw&s" alt="Instagram" /></a>
+            <a href="https://facebook.com"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdmGQOjC_u_kSiGhNCA9Uv2aKPRjX-VKd4-xUmvEuUPA&s"
+                    alt="Facebook" /></a>
+            <a href="https://twitter.com"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReaNRdsTQRPuCrYX7evdU2YufJdkOx01ivHiVgwlaosA&s"
+                    alt="Twitter" /></a>
+            <a href="https://instagram.com"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJY43zkIuDmzCUnQysyc5t_emyUmDgowX51cqrlNFTdw&s"
+                    alt="Instagram" /></a>
         </div>
         <div>
             <p>Todos los derechos reservados © 2023 - MVH</p>
@@ -111,7 +140,7 @@
 
     <script>
         // Función para desplazarse suavemente hacia arriba cuando se hace clic en el botón "Volver arriba"
-        document.getElementById("top").addEventListener("click", function(event) {
+        document.getElementById("top").addEventListener("click", function (event) {
             event.preventDefault(); // Evita el comportamiento predeterminado del enlace
             const scrollTop = window.scrollY || document.documentElement.scrollTop; // Posición actual de desplazamiento
             if (scrollTop > 0) {
@@ -123,4 +152,5 @@
         });
     </script>
 </body>
+
 </html>
